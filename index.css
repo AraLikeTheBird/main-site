@@ -1,0 +1,43 @@
+body {
+    font-family: "Faculty Glyphic";
+}
+nav {
+    background-color: #A82F2F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+}
+.logo img {
+    transition: transform 0.6s ease;
+    height: 18vh;
+    width: auto;
+}
+.logo img:hover{
+    transform: scale(0.85);
+}
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.navlinks a {
+    color: #ffe9d9;
+    text-decoration: none;
+    font-size: 35px;
+    display:inline-block;
+    transition: transform 0.6s ease;
+    margin-right: 23px;
+}
+.navlinks a:hover {
+    color: #0AFFCF;
+    transform: scale(0.85);
+}
+.burgertoggle {
+    display: none;
+    font-size: 28px;
+    color: #ffe9d9;
+    cursor: pointer;
+}
