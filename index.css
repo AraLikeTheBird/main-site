@@ -1,8 +1,10 @@
 body {
     font-family: "Faculty Glyphic";
 }
+
+    /* NAV */
 nav {
-    background-color: #A82F2F;
+    background-color: rgba(59, 29, 45);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +26,7 @@ nav {
     justify-content: center;
 }
 .navlinks a {
-    color: #ffe9d9;
+    color: rgba(230, 225, 227);
     text-decoration: none;
     font-size: 35px;
     display:inline-block;
@@ -35,9 +37,121 @@ nav {
     color: #0AFFCF;
     transform: scale(0.85);
 }
+/* DROPDOWN */
+    .navlinks .dropdown {
+        position: relative;
+    }
+    .navlinks .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 300px;
+        background-color: rgba(59, 29, 45);
+
+        padding: 10px 0;
+        margin: 0;
+
+        list-style: none;
+    }
+    .navlinks .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .navlinks .dropdown-menu li {
+        display: block;
+        margin: 0;
+    }
+    .navlinks .dropdown-menu a {
+        display: block;
+        font-size: 25px;
+        margin: 0;
+        padding: 10px 20px;
+    }
+/*BURGERTOGGLE*/
 .burgertoggle {
     display: none;
     font-size: 28px;
     color: #ffe9d9;
     cursor: pointer;
 }
+
+/*FOOTER*/
+footer{
+    padding: 20px;
+    background: rgba(59, 29, 45);
+    color: #380f00;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    overflow: auto;
+}
+.middle{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle img{
+    height: 27vh;
+    width: auto;
+}
+/*RIGHT*/
+.right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+.mail img{
+    transition: transform 0.6s ease;
+    height: 10vh;
+    display: flex;
+}
+.mail img:hover{
+    transform: scale(0.85);
+}
+.mail a{
+    display: flex;
+    justify-content: center;
+}
+/*LEFT*/
+.left{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+    .footercolumn{
+        display: flex;
+        flex-direction:column;
+        gap: 2vh;
+    }
+    .footercolumn a{
+        text-decoration: none;
+    }
+    .footercolumn h4{
+        color: rgba(230, 225, 227);
+        margin-bottom: 1vh;
+        text-decoration: underline;
+        text-decoration-style: double;
+    }
+/*MIDDLE*/
+.middle img {
+    transition: transform 0.6s ease;
+}
+.middle img:hover{
+    transform: scale(0.85);
+}
+
+/*general*/
+a{
+    color: rgba(230, 225, 227);
+}
+a:hover{
+    color: rgba(217, 162, 95);
+}
+a:active{
+    color: rgba(70, 137, 139);
+}
+
+
+
