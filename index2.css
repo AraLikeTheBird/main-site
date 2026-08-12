@@ -368,27 +368,12 @@ footer {
 
 .hero h1 {
     font-size: clamp(3.5rem, 8vw, 9rem);
-
-    letter-spacing: clamp(
-            0.1rem,
-            0.3vw,
-            0.3rem
-    );
-
     margin: -1.2rem;
 }
 
 .hero h3 {
     font-size: clamp(1.5rem, 3vw, 3rem);
-
-    letter-spacing: clamp(
-            0.1rem,
-            0.5vh,
-            0.5rem
-    );
-
     margin: -1.2rem;
-
     padding: 0.5rem;
 }
 
