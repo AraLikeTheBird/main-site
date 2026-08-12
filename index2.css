@@ -113,6 +113,7 @@ nav {
 
 .dropdown summary:hover {
     transform: scale(0.85);
+    color: rgba(217, 162, 95);
 }
 
 
@@ -308,7 +309,7 @@ footer {
     min-height: 600px;
     max-height: 900px;
 
-    overflow: hidden;
+    overflow: auto;
 }
 
 
@@ -367,12 +368,12 @@ footer {
 }
 
 .hero h1 {
-    font-size: clamp(3.5rem, 8vw, 9rem);
+    font-size: clamp(3.5rem, 7vw, 9rem);
     margin: -1.2rem;
 }
 
 .hero h3 {
-    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
     margin: -1.2rem;
     padding: 0.5rem;
 }
@@ -384,9 +385,9 @@ footer {
     display: flex;
     justify-content: space-evenly;
     position: absolute;
-    gap: 2vh;
+    gap: 1.5vh;
     z-index: 3;
-    right: 1.6rem;
+    right: 3rem;
     bottom: 5vh;
 }
 
@@ -461,7 +462,7 @@ footer {
     bottom: clamp(
             10rem,
             30vh,
-            20rem
+            17rem
     );
 
     color: rgba(59, 29, 45);
@@ -1239,12 +1240,111 @@ footer {
         );
     }
 
+    .hero {
+        height: auto;
+
+        min-height: 0;
+
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    .herocardimage {
+        width: 100%;
+
+        height: 50vh;
+    }
+
+    .herocardimage img {
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    .herocardtext {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+        padding:
+                1.625rem
+                1.5625rem;
+
+        text-align: center;
+
+        background-clip: text;
+
+        clip-path: none;
+
+        gap: 15px;
+
+        padding-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(
+                3rem,
+                12vw,
+                5rem
+        );
+    }
+
+    .hero h3 {
+        font-size: 3vw;
+
+        letter-spacing: 0.5vh;
+
+        margin: -14px;
+
+        padding: 0.5vh;
+
+        margin-top: 0;
+    }
+
+
+    /* HERO CONTACTS */
+
+    .herocontact {
+        position: relative;
+
+        right: auto;
+
+        bottom: auto;
+
+        justify-content: center;
+
+        padding: 0;
+
+        padding-bottom: 3vh;
+    }
+
+    .mail img {
+        height: 6vw;
+    }
     .photogrid {
         grid-template-columns: repeat(2, 1fr);
 
         width: min(90vw, 700px);
     }
-
+    .seemore{
+        position: relative;
+        bottom: clamp(10rem, 30vh, 20rem);
+        color: rgba(59, 29, 45);
+        background-color: rgba(230, 225, 227);
+        font-size: clamp(1rem, 5vw, 2rem);
+        font-weight: bolder;
+        border-radius: 50px;
+        padding: clamp(1rem, 3vh, 2rem);
+        border: 0 solid rgba(230, 225, 227);
+        filter: drop-shadow(1px 20px 8px rgba(59, 29, 45, 0.65));
+        transition: transform 0.4s ease;
+        bottom: 46rem;
+    }
     .shortabout {
         grid-template-columns:
             1fr
@@ -1266,3 +1366,93 @@ footer {
             1fr;
     }
 }
+
+@media (min-width: 900px) and (max-width: 1050px){
+    .hero {
+        height: auto;
+
+        min-height: 0;
+
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    .herocardimage {
+        width: 100%;
+
+        height: 50vh;
+    }
+
+    .herocardimage img {
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    .herocardtext {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+        padding:
+                1.625rem
+                1.5625rem;
+
+        text-align: center;
+
+        background-clip: text;
+
+        clip-path: none;
+
+        gap: 15px;
+
+        padding-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(
+                3rem,
+                12vw,
+                5rem
+        );
+    }
+
+    .hero h3 {
+        font-size: 3vw;
+
+        letter-spacing: 0.5vh;
+
+        margin: -14px;
+
+        padding: 0.5vh;
+
+        margin-top: 0;
+    }
+
+
+    /* HERO CONTACTS */
+
+    .herocontact {
+        position: relative;
+
+        right: auto;
+
+        bottom: auto;
+
+        justify-content: center;
+
+        padding: 0;
+
+        padding-bottom: 3vh;
+    }
+
+    .mail img {
+        height: 6vw;
+    }
+}
+
