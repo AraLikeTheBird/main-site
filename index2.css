@@ -458,9 +458,9 @@ footer {
     position: relative;
 
     bottom: clamp(
-            10rem,
-            30vh,
-            17rem
+            -6rem,
+            -3vh,
+            10rem
     );
 
     color: rgba(59, 29, 45);
