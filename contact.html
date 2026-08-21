@@ -2,9 +2,142 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Faculty+Glyphic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg" href="assets/round-logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
 </head>
 <body>
+
+<header>
+    <nav>
+        <a class="logo" href="index.html"><img src="assets/round-logo.svg" alt="differently coloured shapes (a yellow triangle, a red circle and a blue rectangle."></a>
+
+        <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <details>
+                    <summary>Portfolio</summary>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="portfolio.html">Full Portfolio</a></li>
+                        <li><a href="web.html">Web Design</a></li>
+                        <li><a href="illu.html">Illustrations</a></li>
+                        <li><a href="visdev.html">Visual Development</a></li>
+                        <li><a href="anime.html">Animation</a></li>
+                    </ul>
+                </details>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burgertoggle">☰</div>
+
+    </nav>
+</header>
+
+<main>
+
+    <section class="contact">
+        <div class="rightcontact">
+            <div class="contactpagetext">
+                <h1>Let's work together!</h1>
+                <p>
+                    Have a project in mind? I'd love to hear about it.
+                    Send me a message and I'll get back to you.
+                </p>
+            </div>
+            <form class="contactformpage"
+                  action="https://api.web3forms.com/submit"
+                  method="POST">
+
+                <!-- Web3Forms access key -->
+                <input
+                        type="hidden"
+                        name="access_key"
+                        value="53ca80c0-af50-4ffe-8181-9083c9e8c9ff"
+                >
+
+                <!-- Email subject -->
+                <input
+                        type="hidden"
+                        name="subject"
+                        value="New Portfolio Contact"
+                >
+
+                <label for="name" class="name">Name</label>
+
+                <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your name"
+                        required
+                >
+
+                <label for="email">Email</label>
+
+                <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Your email"
+                        required
+                >
+
+                <label for="message">Message</label>
+
+                <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Tell me about your project..."
+                        required
+                ></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </div>
+        
+        <div class="doodlecontact"><img src="doodles/doodle1.png" alt=""></div>
+
+    </section>
+
+</main>
+
+<footer>
+    <div class="right">
+        <div class="mail"> <a href="mailto:arabird.ttv@gmail.com" target="_blank"> <img src="assets/email.svg" alt="" height="60vh"></a></div>
+        <div class="mail"> <a href="https://www.instagram.com/_ara_like_the_portfolio_/" target="_blank"> <img src="assets/instagram.svg" alt="" height="60vh"> </a> </div>
+        <div class="mail"> <a href="https://www.linkedin.com/in/ara-helena-sophie-zimling-westh-529933236/" target="_blank"> <img src="assets/linkedin.svg" alt="" height="58vh"> </a> </div>
+        <div class="mail"> <a href="https://www.twitch.tv/aralikethebird" target="_blank"> <img src="assets/twitch.svg" alt="" height="60vh"></a></div>
+    </div>
+    <div class="middle">
+        <a href="index.html"> <img src="assets/round-logo.svg" class="logo"> </a>
+    </div>
+    <div class="left">
+        <div class="footercolumn">
+            <h4>Navigation</h4>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footercolumn">
+            <h4>Portfolio</h4>
+            <a href="web.html">Web Design</a>
+            <a href="illu.html">Illustrations</a>
+            <a href="visdev.html">VisDev</a>
+            <a href="anime.html">Animation</a>
+        </div>
+    </div>
+
+</footer>
+<script src="js.js"></script>
 
 </body>
 </html>
