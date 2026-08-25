@@ -13,7 +13,7 @@ burger.addEventListener("click", () => {
 
 
 
-/*MODAL PORT SECTION*/
+/*MODAL webdesign SECTION*/
     /* Find stuff by class or id*/
     const projectCards =
         document.querySelectorAll(".project-card");
@@ -57,7 +57,7 @@ burger.addEventListener("click", () => {
     });
 
     /* ALL THE DIFFERENT CLOSINGS */
-    closeButton.addEventListener("click", function() {
+       closeButton.addEventListener("click", function() {
 
         modal.style.display =
             "none";
@@ -66,7 +66,6 @@ burger.addEventListener("click", () => {
             "";
 
     });
-
     modal.addEventListener("click", function(event) {
 
         if (event.target === modal) {
@@ -80,7 +79,6 @@ burger.addEventListener("click", () => {
         }
 
     });
-
     document.addEventListener("keydown", function(event) {
 
         if (event.key === "Escape") {
@@ -94,3 +92,5 @@ burger.addEventListener("click", () => {
         }
 
     });
+
+

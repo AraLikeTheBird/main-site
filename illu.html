@@ -26,8 +26,9 @@
                         <li><a href="portfolio.html">Full Portfolio</a></li>
                         <li><a href="web.html">Web Design</a></li>
                         <li><a href="illu.html">Illustrations</a></li>
-                        <li><a href="visdev.html">Visual Development</a></li>
                         <li><a href="anime.html">Animation</a></li>
+                        <li><a href="visdev.html">Visual Development</a></li>
+                        <li><a href="gamephoto.html"> Game Photography</a></li>
                     </ul>
                 </details>
             </li>
@@ -38,6 +39,104 @@
 
     </nav>
 </header>
+
+<main>
+    <section class="photo-gallery">
+
+        <div class="mosaic-grid">
+
+            <div
+                    class="mosaic-item"
+                    data-image="portfolio/placeholder.png"
+                    data-description="This photograph was taken during..."
+            >
+                <img src="portfolio/placeholder.png" alt="Description of photo 1">
+            </div>
+
+
+            <div
+                    class="mosaic-item"
+                    data-image="portfolio/placeholder.png"
+                    data-description="This photograph was taken during..."
+            >
+                <img src="portfolio/placeholder.png" alt="Description of photo 1">
+            </div>
+
+            <div
+                    class="mosaic-item"
+                    data-image="portfolio/placeholder.png"
+                    data-description="This photograph was taken during..."
+            >
+                <img src="portfolio/placeholder.png" alt="Description of photo 1">
+            </div>
+
+            <div
+                    class="mosaic-item"
+                    data-image="portfolio/placeholder.png"
+                    data-description="This photograph was taken during..."
+            >
+                <img src="portfolio/placeholder.png" alt="Description of photo 1">
+            </div>
+
+            <div
+                    class="mosaic-item"
+                    data-image="portfolio/placeholder.png"
+                    data-description="This photograph was taken during..."
+            >
+                <img src="portfolio/placeholder.png" alt="Description of photo 1">
+            </div>
+
+        </div>
+
+    </section>
+    <div class="photo-modal" id="photo-modal">
+
+        <button
+                class="photo-modal-close"
+                id="photo-modal-close">
+            ×
+        </button>
+
+
+        <button
+                class="photo-carousel previous"
+                id="photo-previous">
+            ‹
+        </button>
+
+
+        <div class="photo-viewer">
+
+            <img
+                    class="photo-modal-image"
+                    id="photo-modal-image"
+                    src=""
+                    alt=""
+            >
+
+            <div
+                    class="photo-description"
+                    id="photo-description">
+            </div>
+
+        </div>
+
+
+        <button
+                class="photo-carousel next"
+                id="photo-next">
+            ›
+        </button>
+
+
+        <div
+                class="photo-counter"
+                id="photo-counter">
+            1 / 10
+        </div>
+
+    </div>
+</main>
 
 
 <footer>
@@ -63,13 +162,14 @@
             <h4>Portfolio</h4>
             <a href="web.html">Web Design</a>
             <a href="illu.html">Illustrations</a>
-            <a href="visdev.html">VisDev</a>
             <a href="anime.html">Animation</a>
+            <a href="visdev.html">Visual Development</a>
+            <a href="gamephoto.html"> Game Photography</a>
         </div>
     </div>
 
 </footer>
-<script src="js.js"></script>
+<script src="illus-photo.js"></script>
 
 </body>
 </html>
