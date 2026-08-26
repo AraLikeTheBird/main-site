@@ -674,7 +674,7 @@ footer {
 
 /* PORTFOLIO*/
     /*full portfolio*/
-        /*GENERAL*/
+      /*GENERAL*/
         .portgrid{
             display: grid;
             grid-template-columns:repeat(4, minmax(0, 1fr));
@@ -970,159 +970,178 @@ footer {
 
         border: none;
     }
+    /*illustrations AND photgraphy*/
+      .mosaic-grid {
+            columns: 3;
+            margin: 10vh;
+        }
+        .mosaic-item {
+            break-inside: avoid;
 
-    /*illustrations*/
-.mosaic-grid {
-    columns: 3;
-    margin: 10vh;
-}
+            margin-bottom: 10px;
 
-.mosaic-item {
-    break-inside: avoid;
+            cursor: pointer;
 
-    margin-bottom: 10px;
+            overflow: hidden;
+        }
+        .mosaic-item img {
+            width: 100%;
+            height: auto;
 
-    cursor: pointer;
+            display: block;
+        }
+        .photo-modal {
+            display: none;
 
-    overflow: hidden;
-}
+            position: fixed;
+            inset: 0;
 
-.mosaic-item img {
-    width: 100%;
-    height: auto;
+            background: rgba(0, 0, 0, 0.85);
 
-    display: block;
-}
+            z-index: 1000;
 
-.photo-modal {
-    display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .photo-viewer {
+            position: relative;
 
-    position: fixed;
-    inset: 0;
+            max-width: 80vw;
+            max-height: 80vh;
 
-    background: rgba(0, 0, 0, 0.85);
+            overflow: hidden;
+        }
+        .photo-modal-image {
+            display: block;
 
-    z-index: 1000;
+            max-width: 80vw;
+            max-height: 80vh;
 
-    align-items: center;
-    justify-content: center;
-}
-.photo-viewer {
-    position: relative;
+            width: auto;
+            height: auto;
 
-    max-width: 80vw;
-    max-height: 80vh;
+            object-fit: contain;
+        }
+        .photo-description {
+            position: absolute;
 
-    overflow: hidden;
-}
-.photo-modal-image {
-    display: block;
+            left: 0;
+            right: 0;
+            bottom: 0;
 
-    max-width: 80vw;
-    max-height: 80vh;
+            padding: 20px;
 
-    width: auto;
-    height: auto;
+            background: rgba(0, 0, 0, 0.65);
 
-    object-fit: contain;
-}
-.photo-description {
-    position: absolute;
+            color: var(--light);
 
-    left: 0;
-    right: 0;
-    bottom: 0;
+            transform: translateY(100%);
 
-    padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        .photo-viewer:hover .photo-description {
+            transform: translateY(0);
+        }
+        .photo-carousel {
+            position: absolute;
 
-    background: rgba(0, 0, 0, 0.65);
+            top: 50%;
+            transform: translateY(-50%);
 
-    color: white;
+            width: 45px;
+            height: 45px;
 
-    transform: translateY(100%);
+            border: none;
+            border-radius: 50%;
 
-    transition: transform 0.3s ease;
-}
-.photo-viewer:hover .photo-description {
-    transform: translateY(0);
-}
-.photo-carousel {
-    position: absolute;
+            background: var(--light);
 
-    top: 50%;
-    transform: translateY(-50%);
+            font-size: 30px;
 
-    width: 45px;
-    height: 45px;
+            cursor: pointer;
 
-    border: none;
-    border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-    background: white;
+            padding: 0;
 
-    font-size: 30px;
+            line-height: 1;
 
-    cursor: pointer;
+            z-index: 1001;
+        }
+        .photo-carousel.previous {
+            left: 30px;
+        }
+        .photo-carousel.next {
+            right: 30px;
+        }
+        .photo-modal-close {
+            position: absolute;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+            top: 30px;
+            right: 30px;
 
-    padding: 0;
+            width: 40px;
+            height: 40px;
 
-    line-height: 1;
+            border: none;
+            border-radius: 50%;
 
-    z-index: 1001;
-}
+            background: var(--light);
 
-.photo-carousel.previous {
-    left: 30px;
-}
+            font-size: 25px;
 
-.photo-carousel.next {
-    right: 30px;
-}
+            cursor: pointer;
 
-.photo-modal-close {
-    position: absolute;
+            z-index: 1002;
+        }
+        .photo-counter {
+            position: absolute;
 
-    top: 30px;
-    right: 30px;
+            bottom: 25px;
+            left: 50%;
 
-    width: 40px;
-    height: 40px;
+            transform: translateX(-50%);
 
-    border: none;
-    border-radius: 50%;
+            color: var(--light);
 
-    background: white;
+            font-size: 18px;
 
-    font-size: 25px;
+            z-index: 1001;
+        }
 
-    cursor: pointer;
+    /*Animation AND Visual dev*/
 
-    z-index: 1002;
-}
-.photo-counter {
-    position: absolute;
+        .visdev\+anime{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .project{
+            width: fit-content;
+            text-align: center;
+        }
 
-    bottom: 25px;
-    left: 50%;
+        .contentimage{
+            width: 50vh;
+        }
 
-    transform: translateX(-50%);
+        p.projecttext{
+            margin: 2vh;
+            margin-bottom: 10vh;
+        }
+        h1.projecttext{
+            font-size: 9vh;
+            margin-top: 4vh;
+            margin-bottom: 1vh;
+        }
 
-    color: white;
-
-    font-size: 18px;
-
-    z-index: 1001;
-}
+        .top{
+            margin-top: 10vh !important;
+        }
 
 
-
-    /*animation*/
-    /*Visual dev*/
-    /*game photography*/
 
 
 
