@@ -1,3 +1,5 @@
+/*BASIC*/
+
 /* GENERAL*/
 :root {
     --dark: rgba(59, 29, 45);
@@ -709,8 +711,8 @@ footer {
             transition: ease 0.9s;
         }
         .video1{
-            width: 92vh;
-            height: 56vh;
+            width: 70%;
+            height: 39vw;
         }
         .titleport{
             margin-bottom: 5vh;
@@ -833,7 +835,7 @@ footer {
             margin-bottom: -3vh;
         }
         .bot{
-            margin-bottom: 6vh;
+            margin-bottom: 6% !important;
         }
         .portseemore:hover {
             background: rgba(217, 162, 95);
@@ -854,20 +856,20 @@ footer {
         margin-right: 7vh;
     }
     .semester h2 {
-        margin-bottom: 45px;
-        font-size: 45px;
+        font-size: 9vw;
         text-decoration: underline;
         display: flex;
         justify-content: center;
+        margin: 5%;
     }
 
     /* PROJECT GRID */
     .project-grid {
         display: grid;
-
         grid-template-columns: repeat(4, 1fr);
-
-        gap: 5vh;
+        gap: 5%;
+        row-gap: 2%;
+        justify-content: center;
     }
 
     /* PROJECT CARD */
@@ -898,7 +900,7 @@ footer {
     .project-card h3 {
         margin: 8px 0 5px;
         color: var(--dark);
-        font-size: 15px;
+        font-size: 3vw;
         letter-spacing: 2px;
     }
 
@@ -973,7 +975,7 @@ footer {
     /*illustrations AND photgraphy*/
       .mosaic-grid {
             columns: 3;
-            margin: 10vh;
+            margin: 8%;
         }
         .mosaic-item {
             break-inside: avoid;
@@ -1124,21 +1126,22 @@ footer {
         }
 
         .contentimage{
-            width: 50vh;
+            width: 70%;
         }
 
         p.projecttext{
             margin: 2vh;
-            margin-bottom: 10vh;
+            margin-bottom: 8%;
+            font-size: 2vw;
         }
         h1.projecttext{
-            font-size: 9vh;
+            font-size: 7vw;
             margin-top: 4vh;
             margin-bottom: 1vh;
         }
 
         .top{
-            margin-top: 10vh !important;
+            margin-top: 5% !important;
         }
 
 
@@ -1338,13 +1341,17 @@ footer {
 /* RESPONSIVE */
 
     /* MOBILE */
+
+    @media (max-width: 470px){
+        .project-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 3vw;
+        }
+}
     @media (max-width: 600px) {
 
-
-        /* -----------------------------------------------------
-           NAV
-           ----------------------------------------------------- */
-
+        /*NAV */
         nav {
             padding: 0.625rem 0.9375rem;
         }
@@ -1426,9 +1433,7 @@ footer {
         }
 
 
-        /* -----------------------------------------------------
-           HERO
-           ----------------------------------------------------- */
+        /*HERO */
 
         .hero {
             height: auto;
@@ -1517,11 +1522,7 @@ footer {
             height: 6vw;
         }
 
-
-        /* -----------------------------------------------------
-           PORTFOLIO
-           ----------------------------------------------------- */
-
+        /* PORTFOLIO */
         .photogrid {
             grid-template-columns: 1fr 1fr;
 
@@ -1557,9 +1558,7 @@ footer {
         }
 
 
-        /* -----------------------------------------------------
-           SHORT ABOUT
-           ----------------------------------------------------- */
+        /* SHORT ABOUT*/
 
         .shortabout {
             display: grid;
@@ -1596,21 +1595,13 @@ footer {
         }
 
 
-        /* -----------------------------------------------------
-           QUICK CONTACT
-           ----------------------------------------------------- */
+        /* QUICK CONTACT*/
 
         .quickcontact {
             display: flex;
-
             gap: 0;
-
-            padding:
-                    50px
-                    25px;
-
+            padding: 50px 25px;
             padding-bottom: 7vw;
-
             flex-direction: column;
         }
 
@@ -1648,11 +1639,8 @@ footer {
         }
 
 
-        /* -----------------------------------------------------
-           FOOTER
-           ----------------------------------------------------- */
-
-        footer {
+        /*  FOOTER */
+           footer {
             grid-template-columns: 1fr;
 
             gap: 40px;
@@ -1697,8 +1685,46 @@ footer {
 
             justify-items: center;
         }
-    }
 
+        /*VISUAL DEV*/
+        .contentimage {
+            width: 70%;
+        }
+        h1.projecttext {
+            margin-top: -2vh;
+            margin-bottom: 1vh;
+        }
+
+        .titleport {
+            margin-bottom: 4%;
+            font-size: 5.5vw;
+            margin-top: 7%;
+        }
+        .portgrid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        .portseemore {
+            margin: 3%;
+            margin-bottom: 0;
+        }
+
+        .project-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .project-card img {
+            height: 20vw;
+        }
+
+        .semester h2 {
+            margin: 3%
+        }
+        .semester {
+            margin-bottom: 0;
+            margin-top: 0;
+            padding-top: 3%;
+        }
+    }
     /* TABLET AND UP */
     @media (min-width: 601px) and (max-width: 900px) {
         .navlinks {
@@ -1828,6 +1854,20 @@ footer {
                 1fr
                 1fr;
         }
+        /*VISUAL DEV*/
+
+        p.projecttext {
+            margin-bottom: 8%;
+         }
+        .project-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .semester h2{
+            margin: 0;
+        }
+
+
     }
     @media (min-width: 900px) and (max-width: 1050px){
         .hero {
@@ -1906,4 +1946,9 @@ footer {
         .mail img {
             height: 6vw;
         }
+        .semester h2{
+            margin: 3%;
+        }
+
+
     }
