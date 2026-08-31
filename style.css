@@ -1121,11 +1121,15 @@ footer {
             align-items: center;
         }
         .project{
-            width: fit-content;
+            width: 100%;
             text-align: center;
         }
 
         .contentimage{
+            width: 70%;
+        }
+
+        .contentimage.video1{
             width: 70%;
         }
 
