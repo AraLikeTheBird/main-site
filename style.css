@@ -1162,6 +1162,7 @@ footer {
         gap: 10px;
         min-height:100vh;
         margin-right: 10px;
+        align-items: center;
     }
     .left-column{
         display: grid;
@@ -1171,7 +1172,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         padding: 10px;
         text-align: justify;
         margin-right: 23px;
@@ -1193,7 +1194,8 @@ footer {
         border-radius: 50%;
         padding: 2px;
         width: auto;
-        height:73vh;
+        height: 38vw;
+        margin-right: 3vw;
     }
     .text h3{
         font-size: 2rem;
@@ -1240,7 +1242,7 @@ footer {
     background-color: var(--light);
     color: var(--dark);
     grid-row-gap: 0;
-    grid-column-gap: 5vh;
+    grid-column-gap: 5%;
 }
 
 /* CONTACT TEXT */
@@ -1251,11 +1253,11 @@ footer {
     grid-column: 2;
 }
 .contactpagetext h1 {
-    font-size: clamp(3rem, 4.5vw, 6rem);
+    font-size: clamp(2rem, 6.5vw, 6rem);
     margin: 0;
 }
 .contactpagetext p {
-    font-size: clamp(1rem, 1.3vw, 2rem);
+    font-size: clamp(0.9rem, 3.3vw, 2rem);
     line-height: 1.4;
     margin: 0;
     margin-top: 0.2rem;
@@ -1338,7 +1340,7 @@ footer {
     padding-right: 0.5vh;
 }
 .doodlecontact img{
-    height: 43vh;
+    height: 24vw;
     width: auto;
 }
 
@@ -1352,8 +1354,30 @@ footer {
             flex-direction: column;
             gap: 3vw;
         }
+        .rightcontact{
+            width: 46vw;
+        }
 }
     @media (max-width: 600px) {
+        .layout{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .profile-image{
+            margin-top: 5vw;
+            margin-right: 0;
+        }
+
+        .text{
+            margin-top:-3%;
+        }
+        .text h3{
+            margin-top:0;
+        }
+        .card{
+            margin-top: 0;
+            padding-top: 0;
+        }
 
         /*NAV */
         nav {
@@ -1871,6 +1895,27 @@ footer {
             margin: 0;
         }
 
+        .layout{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .profile-image{
+            margin-top: 5vw;
+            margin-right: 0;
+        }
+
+        .text{
+            margin-top:-3%;
+        }
+        .text h3{
+            margin-top:0;
+        }
+        .card{
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+
 
     }
     @media (min-width: 900px) and (max-width: 1050px){
@@ -1952,6 +1997,25 @@ footer {
         }
         .semester h2{
             margin: 3%;
+        }
+        .layout{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .profile-image{
+            margin-top: 5vw;
+            margin-right: 0;
+        }
+
+        .text{
+            margin-top:-3%;
+        }
+        .text h3{
+            margin-top:0;
+        }
+        .card{
+            margin-top: 0;
+            padding-top: 0;
         }
 
 
