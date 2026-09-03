@@ -339,6 +339,10 @@ footer {
     color: rgba(230, 225, 227);
 }
 
+.portfolioh1{
+    font-size: clamp(1vw, 4rem, 8vw);
+}
+
     /* PORTFOLIO GRID */
     .photogrid {
         display: grid;
@@ -373,8 +377,7 @@ footer {
     .seemore {
         position: relative;
 
-        bottom: clamp(-6rem, 52vh, 20rem
-        );
+        bottom: clamp(-6rem, 52vh, 16rem);
 
         color: rgba(59, 29, 45);
 
