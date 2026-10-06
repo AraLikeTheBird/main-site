@@ -10,6 +10,29 @@ burger.addEventListener("click", () => {
 });
 
 
+
+const sensorsall= document.querySelectorAll(".shrinksensor")
+
+console.log(sensorsall)
+ sensorsall.forEach((sensor, index) => {
+     console.log(sensor)
+
+     sensor.addEventListener("mouseenter", (event)=>{
+         event.preventDefault();
+         const container= sensor.querySelector("div")
+         container.className = "rippled"
+         console.log("rippledadded")
+     })
+
+     sensor.addEventListener("mouseleave", ()=>{
+         const container= sensor.querySelector("div")
+          container.className = ""
+     })
+ }
+ )
+console.log("done")
+
+
 /*MODAL webdesign SECTION*/
     /* Find stuff by class or id*/
     const projectCards =
@@ -89,5 +112,6 @@ burger.addEventListener("click", () => {
         }
 
     });
+
 
 

@@ -88,11 +88,51 @@ nav {
     transition: transform 0.6s ease;
 
     margin-right: clamp(0.5rem, 1.2vw, 1.5rem);
+    will-change: transform;
 }
 .navlinks a:hover {
-    transform: scale(0.85);
+
     color: rgba(217, 162, 95);
 }
+
+.rippled{
+    animation: textWave 2.5s ease-in-out infinite;
+}
+
+
+.shrink{
+    transition: transform 0.6s ease;
+}
+.shrink:hover{
+    transform: scale(0.85);
+}
+
+
+
+@keyframes textWave {
+    0% {
+        transform: translateY(3px);
+    }
+
+    25% {
+        transform: translateY(-4px) ;
+    }
+
+    50% {
+        transform: translateY(3px) ;
+    }
+
+    75% {
+        transform: translateY(-4px) ;
+    }
+
+    100% {
+        transform: translateY(3px) ;
+    }
+
+}
+
+
 
 
 /* Dropdown */
@@ -306,7 +346,7 @@ footer {
                 22% 0,
                 100% 0,
                 100% 100%,
-                62% 110%
+                60% 110%
         );
 
         z-index: 2;
