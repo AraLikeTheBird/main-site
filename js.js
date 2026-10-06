@@ -10,9 +10,6 @@ burger.addEventListener("click", () => {
 });
 
 
-
-
-
 /*MODAL webdesign SECTION*/
     /* Find stuff by class or id*/
     const projectCards =
